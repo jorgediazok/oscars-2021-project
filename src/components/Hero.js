@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Hero.css';
-import Video from '../videos/video1.mp4';
+import Video from '../videos/video2.mp4';
 import { useHistory } from 'react-router-dom';
 
 const Hero = () => {

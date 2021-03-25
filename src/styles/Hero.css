@@ -88,6 +88,7 @@
   transition: all 0.2s ease-in-out;
   padding: 14px 48px;
   color: rgb(161, 59, 59);
+  font-weight: 700;
 }
 
 .callToAction:hover {

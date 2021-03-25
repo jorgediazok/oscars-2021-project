@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Client from '../components/api';
+import Card from '../components/Card';
 
 const Game = () => {
   useEffect(() => {

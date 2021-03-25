@@ -4,9 +4,11 @@
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 630px;
   position: relative;
   z-index: 1;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .heroContainer::before {
@@ -47,7 +49,6 @@
 .heroContent {
   z-index: 3;
   max-width: 1200px;
-  position: absolute;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
@@ -86,10 +87,13 @@
   align-items: center;
   transition: all 0.2s ease-in-out;
   padding: 14px 48px;
+  color: rgb(161, 59, 59);
 }
 
 .callToAction:hover {
   transition: all 0.2s ease-in-out;
+  background: #0c0c0c;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Client from '../components/api';
 import Card from '../components/Card';
+import '../styles/Game.css';
 
 const Game = () => {
   useEffect(() => {
@@ -18,7 +19,17 @@ const Game = () => {
     getData();
   }, []);
 
-  return <div>This is the game</div>;
+  return (
+    <>
+      <div className="body">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    </>
+  );
 };
 
 export default Game;

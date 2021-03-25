@@ -1,0 +1,93 @@
+.container {
+  position: relative;
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+.container .box {
+  position: relative;
+  width: 275px;
+  height: 275px;
+  background-color: #000;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.container .box:hover {
+  cursor: pointer;
+}
+
+.container .box .imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container .box .imgBox:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgb(161, 59, 59), #000);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container .box:hover .imgBox:before {
+  opacity: 1;
+}
+
+.container .box .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+
+.container .box .content h2 {
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+}
+
+.container .box:hover .content h2 {
+  transform: translateY(0px);
+}
+
+.container .box .content p {
+  color: #fff;
+  transition: 0.5s;
+  font-size: 14px;
+  transform: translateY(200px);
+}
+
+.container .box:hover .content p {
+  transform: translateY(0px);
+}

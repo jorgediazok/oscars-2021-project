@@ -1,19 +1,16 @@
 import React from 'react';
 import '../styles/Card.css';
 
-const Card = () => {
+const Card = ({ categoria, pelicula, classname, image, onClick }) => {
   return (
-    <div className="container">
-      <div className="box">
-        <div className="imgBox">
-          <img src="https://i.redd.it/3g7imkf5qfa61.jpg" alt="" />
-        </div>
-        <div className="content">
-          <h2>Image Title</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Laboriosam, ex?
-          </p>
+    <div className={`container ${classname}`} id={pelicula} onClick={onClick}>
+      <div className="card">
+        <img src={`http:${image}`} alt="" />
+        <div className="details">
+          <h2>{pelicula}</h2>
+          <div className="name">
+            <p>Nombre nominado</p>
+          </div>
         </div>
       </div>
     </div>

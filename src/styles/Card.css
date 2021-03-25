@@ -1,93 +1,73 @@
-.container {
-  position: relative;
-  width: 1100px;
-  display: flex;
-  flex-wrap: wrap;
-  transform-style: preserve-3d;
-  perspective: 500px;
-}
-
-.container .box {
-  position: relative;
-  width: 275px;
-  height: 275px;
-  background-color: #000;
-  transition: 0.5s;
-  transform-style: preserve-3d;
-  overflow: hidden;
-}
-
-.container .box:hover {
-  cursor: pointer;
-}
-
-.container .box .imgBox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.container .box .imgBox:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, rgb(161, 59, 59), #000);
-  z-index: 1;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.container .box:hover .imgBox:before {
-  opacity: 1;
-}
-
-.container .box .imgBox img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.container .box .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  padding: 20px;
-  align-items: flex-end;
+* {
   box-sizing: border-box;
 }
 
-.container .box .content h2 {
-  color: #fff;
-  transition: 0.5s;
+.container {
+  background-color: #eee;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  margin: 15px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+
+.details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+  background-color: #fff;
+  align-items: center;
+  width: 100%;
+  transform: translateY(100%);
+  transition: all 0.3s;
+}
+
+.details h2 {
   text-transform: uppercase;
-  margin-bottom: 5px;
   font-size: 20px;
-  transform: translateY(200px);
+  color: #565656;
+  letter-spacing: 1px;
 }
 
-.container .box:hover .content h2 {
-  transform: translateY(0px);
+.card:hover .details,
+.card:hover .p {
+  transform: none;
 }
 
-.container .box .content p {
-  color: #fff;
-  transition: 0.5s;
-  font-size: 14px;
-  transform: translateY(200px);
+.card:hover img {
+  transform: scale(1.2);
 }
 
-.container .box:hover .content p {
-  transform: translateY(0px);
+.name {
+  margin-left: 15px;
+}
+
+.card-hidden {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
 }

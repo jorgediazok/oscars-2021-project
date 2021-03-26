@@ -2,3 +2,7 @@
   position: absolute;
   top: 30px;
 }
+
+.category {
+  text-transform: uppercase;
+}

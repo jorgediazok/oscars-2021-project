@@ -41,7 +41,7 @@
   align-items: center;
   width: 100%;
   transform: translateY(100%);
-  transition: all 0.6s;
+  transition: all 0.4s;
 }
 
 .details h2 {
@@ -70,4 +70,15 @@
   left: 0;
   opacity: 0;
   pointer-events: none;
+}
+
+@media (max-width: 360px) {
+  .card {
+    width: auto;
+    flex-basis: 100%;
+  }
+  .details h2,
+  .details p {
+    font-size: 14px;
+  }
 }

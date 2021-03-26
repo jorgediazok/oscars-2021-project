@@ -35,7 +35,12 @@ const Game = () => {
           return (
             <>
               <div className="category-container">
-                <h1 className="category">{categoria.fields.category}</h1>
+                <h1
+                  className={
+                    i === currentCategoryIndex ? 'category' : 'card-hidden'
+                  }>
+                  {categoria.fields.category}
+                </h1>
               </div>
 
               <Card
@@ -44,34 +49,39 @@ const Game = () => {
                 key="movie1"
                 classname={i === currentCategoryIndex ? '' : 'card-hidden'}
                 onClick={onClickHandler}
+                nameVariable={categoria.fields.name1}
               />
               <Card
-                image={categoria.fields.image.fields.file.url}
+                image={categoria.fields.image2.fields.file.url}
                 pelicula={categoria.fields.movie2}
                 key="movie2"
                 classname={i === currentCategoryIndex ? '' : 'card-hidden'}
                 onClick={onClickHandler}
+                nameVariable={categoria.fields.name2}
               />
               <Card
-                image={categoria.fields.image.fields.file.url}
+                image={categoria.fields.image3.fields.file.url}
                 pelicula={categoria.fields.movie3}
                 key="movie3"
                 classname={i === currentCategoryIndex ? '' : 'card-hidden'}
                 onClick={onClickHandler}
+                nameVariable={categoria.fields.name3}
               />
               <Card
-                image={categoria.fields.image.fields.file.url}
+                image={categoria.fields.image4.fields.file.url}
                 pelicula={categoria.fields.movie4}
                 key="movie4"
                 classname={i === currentCategoryIndex ? '' : 'card-hidden'}
                 onClick={onClickHandler}
+                nameVariable={categoria.fields.name4}
               />
               <Card
-                image={categoria.fields.image.fields.file.url}
+                image={categoria.fields.image5.fields.file.url}
                 pelicula={categoria.fields.movie5}
                 key="movie5"
                 classname={i === currentCategoryIndex ? '' : 'card-hidden'}
                 onClick={onClickHandler}
+                nameVariable={categoria.fields.name5}
               />
             </>
           );

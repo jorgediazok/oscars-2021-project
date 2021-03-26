@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Card.css';
 
-const Card = ({ categoria, pelicula, classname, image, onClick }) => {
+const Card = ({ pelicula, classname, image, onClick }) => {
   return (
     <div className={`container ${classname}`} id={pelicula} onClick={onClick}>
       <div className="card">

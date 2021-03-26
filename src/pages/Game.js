@@ -30,11 +30,14 @@ const Game = () => {
 
   return (
     <>
-      <h1 style={{ textAlign: 'center' }}>CATEGORÍA</h1>
       <div className="container">
         {data.map((categoria, i) => {
           return (
             <>
+              <div className="category-container">
+                <h1 className="category">{categoria.fields.category}</h1>
+              </div>
+
               <Card
                 image={categoria.fields.image.fields.file.url}
                 pelicula={categoria.fields.movie1}

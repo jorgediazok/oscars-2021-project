@@ -1,15 +1,5 @@
-.container {
-  background-color: #eee;
-  display: flex;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-}
-
 .card {
-  width: 230px;
+  width: 240px;
   height: 400px;
   margin: 10px;
   cursor: pointer;
@@ -81,7 +71,6 @@
 @media (max-width: 360px) {
   .card {
     width: auto;
-    flex-basis: 100%;
   }
   .details h2,
   .details p {

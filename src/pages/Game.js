@@ -38,7 +38,7 @@ const Game = () => {
                 <div className="category-container">
                   <h1
                     className={
-                      i === currentCategoryIndex ? 'category' : 'card-hidden'
+                      i === currentCategoryIndex ? 'category' : 'title-hidden'
                     }>
                     {categoria.fields.category}
                   </h1>

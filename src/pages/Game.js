@@ -5,7 +5,7 @@ import Loading from '../components/Loading';
 import '../styles/Game.css';
 
 const Game = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
 
@@ -17,7 +17,8 @@ const Game = () => {
         });
         const data = response.items;
         setData(data);
-        console.log(data);
+        // console.log(data);
+        setIsLoading(false);
       } catch (err) {
         console.log(err);
       }

@@ -1,0 +1,22 @@
+.loading {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+
+@media (max-width: 320px) {
+  .loading {
+    top: 40%;
+    left: 33%;
+  }
+}
+
+@media (max-width: 360px) {
+  .loading {
+    left: 36%;
+  }
+}
+
+.spinner-image {
+  height: 100px;
+}

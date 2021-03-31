@@ -1,12 +1,11 @@
 import React from 'react';
-import Spinner from '../videos/loading.gif';
+import '../styles/Loading.css';
+import Spinner from '../videos/tail-spin.svg';
 
 const Loading = () => {
   return (
     <div className="loading">
-      <div className="loadingChild">
-        <Spinner />
-      </div>
+      <img src={Spinner} alt="" className="spinner-image" />
     </div>
   );
 };

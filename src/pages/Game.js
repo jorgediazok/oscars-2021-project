@@ -29,7 +29,7 @@ const Game = () => {
   }, []);
 
   const onClickHandler = (e) => {
-    setMovies(e.currentTarget.id);
+    setMovies([...movies, e.currentTarget.id]);
     setCurrentCategoryIndex(currentCategoryIndex + 1);
   };
 
@@ -190,7 +190,7 @@ const Game = () => {
                       nameVariable={categoria.fields.name8}
                     />
                   </div>
-                  {categoria.length - 1 ? <Results /> : ''}
+                  {movies.length === 23 ? <Results /> : ''}
                 </>
               );
             }

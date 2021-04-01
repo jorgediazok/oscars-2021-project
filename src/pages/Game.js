@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Client from '../components/api';
 import Card from '../components/Card';
 import Loading from '../components/Loading';
+import Results from '../components/Results';
 import '../styles/Game.css';
 
 const Game = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
+  const [movies, setMovies] = useState([]);
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
 
   useEffect(() => {
@@ -17,7 +19,7 @@ const Game = () => {
         });
         const data = response.items;
         setData(data);
-        // console.log(data);
+        console.log(data);
         setIsLoading(false);
       } catch (err) {
         console.log(err);
@@ -27,9 +29,11 @@ const Game = () => {
   }, []);
 
   const onClickHandler = (e) => {
-    console.log(e.currentTarget.id);
+    setMovies(e.currentTarget.id);
     setCurrentCategoryIndex(currentCategoryIndex + 1);
   };
+
+  console.log(movies);
 
   return (
     <>
@@ -186,6 +190,7 @@ const Game = () => {
                       nameVariable={categoria.fields.name8}
                     />
                   </div>
+                  {categoria.length - 1 ? <Results /> : ''}
                 </>
               );
             }

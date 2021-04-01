@@ -1,0 +1,20 @@
+.results {
+  background: url('../images/back11.jpg'),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  color: white;
+  height: 100vh;
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  height: inherit;
+  padding-left: 10px;
+}

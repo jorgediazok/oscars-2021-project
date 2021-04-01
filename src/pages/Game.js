@@ -33,8 +33,6 @@ const Game = () => {
     setCurrentCategoryIndex(currentCategoryIndex + 1);
   };
 
-  console.log(movies);
-
   return (
     <>
       {isLoading ? (
@@ -190,7 +188,7 @@ const Game = () => {
                       nameVariable={categoria.fields.name8}
                     />
                   </div>
-                  {movies.length === 23 ? <Results /> : ''}
+                  {movies.length === 23 ? <Results movies={movies} /> : ''}
                 </>
               );
             }

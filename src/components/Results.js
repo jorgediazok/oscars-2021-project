@@ -1,9 +1,12 @@
 import React from 'react';
+import '../styles/Results.css';
 
-const Results = () => {
+const Results = ({ movies }) => {
   return (
-    <div style={{ background: 'red', color: 'white' }}>
-      This is the results page
+    <div className="results">
+      <div className="content">
+        <p>{movies}</p>
+      </div>
     </div>
   );
 };

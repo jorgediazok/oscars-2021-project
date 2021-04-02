@@ -34,7 +34,7 @@ const Game = () => {
   };
 
   return (
-    <>
+    <React.Fragment>
       {isLoading ? (
         <Loading />
       ) : (
@@ -42,7 +42,7 @@ const Game = () => {
           {data.map((categoria, i) => {
             if (categoria.fields.category !== 'Mejor Película') {
               return (
-                <>
+                <React.Fragment key={i}>
                   <div className="category-container">
                     <h1
                       className={
@@ -98,11 +98,11 @@ const Game = () => {
                       nameVariable={categoria.fields.name5}
                     />
                   </div>
-                </>
+                </React.Fragment>
               );
             } else {
               return (
-                <>
+                <React.Fragment key={i}>
                   <div className="category-container">
                     <h1
                       className={
@@ -189,13 +189,13 @@ const Game = () => {
                     />
                   </div>
                   {movies.length === 23 ? <Results movies={movies} /> : ''}
-                </>
+                </React.Fragment>
               );
             }
           })}
         </div>
       )}
-    </>
+    </React.Fragment>
   );
 };
 

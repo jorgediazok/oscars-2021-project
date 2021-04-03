@@ -3,6 +3,7 @@ import Client from '../components/api';
 import Card from '../components/Card';
 import Loading from '../components/Loading';
 import Results from '../components/Results';
+import Oscar from '../images/oscar.png';
 import '../styles/Game.css';
 
 const Game = () => {
@@ -49,6 +50,7 @@ const Game = () => {
                         i === currentCategoryIndex ? 'category' : 'title-hidden'
                       }>
                       {categoria.fields.category}
+                      <img src={Oscar} alt="" className="oscar-image" />
                     </h1>
                   </div>
                   <div className="cards_up">
@@ -109,6 +111,7 @@ const Game = () => {
                         i === currentCategoryIndex ? 'category' : 'card-hidden'
                       }>
                       {categoria.fields.category}
+                      <img src={Oscar} alt="" className="oscar-image" />
                     </h1>
                   </div>
                   <div className="cards_up">

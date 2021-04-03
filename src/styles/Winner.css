@@ -1,0 +1,47 @@
+.containerWinner {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-gap: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.containerWinner .box {
+  position: relative;
+  background: linear-gradient(#b88746, #fdf5a6);
+  padding: 20px 40px;
+  color: #191919;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.containerWinner .box img {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  color: #191919;
+  z-index: 1;
+}
+
+.containerWinner .box h2 {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  color: #191919;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.containerWinner .box p {
+  margin: 0;
+  padding: 0;
+  color: #191919;
+  font-style: italic;
+  font-size: 20px;
+}

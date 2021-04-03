@@ -7,12 +7,10 @@ const Results = ({ movies }) => {
 
   return (
     <div className="results">
-      <div className="content">
-        <p>
-          {movies.map((movie) => (
-            <Winner movie={movie} />
-          ))}
-        </p>
+      <div className="containerWinner">
+        {movies.map((movie) => (
+          <Winner movie={movie} />
+        ))}
       </div>
     </div>
   );

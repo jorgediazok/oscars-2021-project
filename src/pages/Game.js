@@ -53,7 +53,7 @@ const Game = () => {
                       <img src={Oscar} alt="" className="oscar-image" />
                     </h1>
                   </div>
-                  <div className="cards_up">
+                  <div className="cards">
                     <Card
                       image={categoria.fields.image.fields.file.url}
                       pelicula={categoria.fields.movie1}
@@ -114,7 +114,7 @@ const Game = () => {
                       <img src={Oscar} alt="" className="oscar-image" />
                     </h1>
                   </div>
-                  <div className="cards_up">
+                  <div className="cards">
                     <Card
                       image={categoria.fields.image.fields.file.url}
                       pelicula={categoria.fields.movie1}
@@ -160,37 +160,38 @@ const Game = () => {
                       onClick={onClickHandler}
                       nameVariable={categoria.fields.name5}
                     />
+
+                    <div className="cards_down">
+                      <Card
+                        image={categoria.fields.image6.fields.file.url}
+                        pelicula={categoria.fields.movie6}
+                        classname={
+                          i === currentCategoryIndex ? '' : 'card-hidden'
+                        }
+                        onClick={onClickHandler}
+                        nameVariable={categoria.fields.name6}
+                      />
+                      <Card
+                        image={categoria.fields.image7.fields.file.url}
+                        pelicula={categoria.fields.movie7}
+                        classname={
+                          i === currentCategoryIndex ? '' : 'card-hidden'
+                        }
+                        onClick={onClickHandler}
+                        nameVariable={categoria.fields.name7}
+                      />
+                      <Card
+                        image={categoria.fields.image8.fields.file.url}
+                        pelicula={categoria.fields.movie8}
+                        classname={
+                          i === currentCategoryIndex ? '' : 'card-hidden'
+                        }
+                        onClick={onClickHandler}
+                        nameVariable={categoria.fields.name8}
+                      />
+                    </div>
                   </div>
 
-                  <div className="cards_down">
-                    <Card
-                      image={categoria.fields.image6.fields.file.url}
-                      pelicula={categoria.fields.movie6}
-                      classname={
-                        i === currentCategoryIndex ? '' : 'card-hidden'
-                      }
-                      onClick={onClickHandler}
-                      nameVariable={categoria.fields.name6}
-                    />
-                    <Card
-                      image={categoria.fields.image7.fields.file.url}
-                      pelicula={categoria.fields.movie7}
-                      classname={
-                        i === currentCategoryIndex ? '' : 'card-hidden'
-                      }
-                      onClick={onClickHandler}
-                      nameVariable={categoria.fields.name7}
-                    />
-                    <Card
-                      image={categoria.fields.image8.fields.file.url}
-                      pelicula={categoria.fields.movie8}
-                      classname={
-                        i === currentCategoryIndex ? '' : 'card-hidden'
-                      }
-                      onClick={onClickHandler}
-                      nameVariable={categoria.fields.name8}
-                    />
-                  </div>
                   {movies.length === 23 ? <Results movies={movies} /> : ''}
                 </React.Fragment>
               );

@@ -26,8 +26,8 @@
   flex-direction: column;
   justify-content: center;
   padding: 20px 10px;
-  color: #fff;
-  background-color: #b79541;
+  color: #191919;
+  background: linear-gradient(#b88746, #fdf5a6);
   align-items: center;
   text-align: center;
   width: 100%;
@@ -39,10 +39,15 @@
   text-transform: uppercase;
   font-size: 18px;
   font-family: 'Playfair Display', serif;
-  color: #282828;
-  font-weight: 800;
+  color: #191919;
+  font-weight: 700;
+  text-align: center;
   letter-spacing: 1px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
+}
+
+.details p {
+  font-style: italic;
 }
 
 .card:hover .details,
@@ -71,18 +76,12 @@
   pointer-events: none;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 411px) {
   .card {
     width: auto;
   }
   .details h2,
   .details p {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 411px) {
-  .card {
-    width: auto;
+    font-size: 18px;
   }
 }

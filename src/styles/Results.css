@@ -1,16 +1,26 @@
 .results {
-  background: url('../images/back2.jpg'),
+  /* background: url('../images/back2.jpg'),
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-position: center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-repeat: no-repeat;
-  /* background-color: #191919; */
+  background-repeat: no-repeat; */
+  background-color: #191919;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  width: 100%;
+}
+
+.results_title {
+  position: absolute;
+  top: 30px;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(#b88746, #fdf5a6);
+  -webkit-background-clip: text;
+  background-clip: 0;
+  color: transparent;
 }

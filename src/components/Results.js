@@ -7,6 +7,7 @@ const Results = ({ movies }) => {
 
   return (
     <div className="results">
+      <h1 className="results_title">Tus Elegidos</h1>
       <div className="containerWinner">
         {movies.map((movie) => (
           <Winner movie={movie} />

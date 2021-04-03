@@ -1,32 +1,59 @@
 .containerWinner {
-  width: 1200px;
-  height: auto;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  grid-gap: 20px;
-  padding: 10px;
-  box-sizing: border-box;
+  margin-top: 100px;
+  display: flex;
+  padding: 3px;
+  overflow-x: scroll;
 }
 
-.containerWinner .box {
+/* .containerWinner::-webkit-scrollbar {
+  width: 20px;
+  height: 0px;
+}
+
+.containerWinner::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0% 0% 100% 0.25), inset -2px -2px 2px;
+}
+
+.containerWinner::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d, #17141d);
+} */
+
+.box {
+  display: flex;
   position: relative;
+  flex-direction: column;
+  height: 340px;
+  width: 120px;
+  min-width: 200px;
   background: linear-gradient(#b88746, #fdf5a6);
-  padding: 20px 40px;
+  padding: 1.5rem;
+  border-radius: 16px;
   color: #191919;
   text-align: center;
-  overflow: hidden;
-  border-radius: 20px;
   cursor: pointer;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.2s;
+}
+
+.box:hover {
+  transform: translateY(-1rem);
+}
+
+.box:hover ~ .box {
+  transform: translateX(120px);
+}
+
+.box:not(:first-child) {
+  margin-left: -100px;
 }
 
 .containerWinner .box img {
-  position: relative;
-  margin: 0;
+  margin-top: 30px;
   padding: 0;
-  height: 60px;
+  height: 80px;
   color: #191919;
-  z-index: 1;
 }
 
 .containerWinner .box h2 {

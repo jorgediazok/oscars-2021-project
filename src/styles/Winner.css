@@ -2,7 +2,6 @@
   display: flex;
   padding: 3rem;
   overflow-x: scroll;
-  width: 2000px;
 }
 
 /* .containerWinner::-webkit-scrollbar {

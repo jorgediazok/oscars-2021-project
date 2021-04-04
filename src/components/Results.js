@@ -12,8 +12,8 @@ const Results = ({ movies }) => {
         Tus Elegidos <img src={Oscar} alt="" className="oscar-image" />
       </h1>
       <div className="containerWinner">
-        {movies.map((movie) => (
-          <Winner movie={movie} />
+        {movies.map((movie, i) => (
+          <Winner movie={movie} key={i} />
         ))}
       </div>
     </div>

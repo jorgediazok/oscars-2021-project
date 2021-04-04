@@ -25,6 +25,24 @@
   color: transparent;
 }
 
+.results__button {
+  position: absolute;
+  top: 102px;
+  cursor: pointer;
+  background: linear-gradient(#b88746, #fdf5a6);
+  color: #191919;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 10px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.results__button:hover {
+  background: linear-gradient(#fdf5a6, #b88746);
+}
+
 .oscar-image {
   max-height: 30px;
   margin-left: 20px;

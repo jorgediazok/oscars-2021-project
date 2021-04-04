@@ -1,23 +1,11 @@
 .containerWinner {
   display: flex;
-  padding: 3rem;
-  overflow-x: scroll;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  width: 100%;
+  overflow-x: hidden;
 }
-
-/* .containerWinner::-webkit-scrollbar {
-  width: 20px;
-  height: 0px;
-}
-
-.containerWinner::-webkit-scrollbar-thumb {
-  background: red;
-  border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0% 0% 100% 0.25), inset -2px -2px 2px;
-}
-
-.containerWinner::-webkit-scrollbar-track {
-  background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d, #17141d);
-} */
 
 .box {
   display: flex;
@@ -25,6 +13,7 @@
   flex-direction: column;
   height: 340px;
   min-width: 190px;
+  max-width: 200px;
   background: linear-gradient(#b88746, #fdf5a6);
   padding: 1.5rem;
   border-radius: 16px;
@@ -41,11 +30,11 @@
 }
 
 .box:hover ~ .box {
-  transform: translateX(120px);
+  transform: translateX(125px);
 }
 
 .box:not(:first-child) {
-  margin-left: -100px;
+  margin-left: -145px;
 }
 
 .containerWinner .box img {

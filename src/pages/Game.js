@@ -30,7 +30,14 @@ const Game = () => {
   }, []);
 
   const onClickHandler = (e) => {
-    setMovies([...movies, e.currentTarget.id]);
+    const [categoria, pelicula] = e.currentTarget.id.split('-');
+    setMovies([
+      ...movies,
+      {
+        pelicula,
+        categoria,
+      },
+    ]);
     setCurrentCategoryIndex(currentCategoryIndex + 1);
   };
 
@@ -62,6 +69,7 @@ const Game = () => {
                       }
                       onClick={onClickHandler}
                       nameVariable={categoria.fields.name1}
+                      categoria={categoria.fields.category}
                     />
                     <Card
                       image={categoria.fields.image2.fields.file.url}
@@ -71,6 +79,7 @@ const Game = () => {
                       }
                       onClick={onClickHandler}
                       nameVariable={categoria.fields.name2}
+                      categoria={categoria.fields.category}
                     />
                     <Card
                       image={categoria.fields.image3.fields.file.url}
@@ -80,6 +89,7 @@ const Game = () => {
                       }
                       onClick={onClickHandler}
                       nameVariable={categoria.fields.name3}
+                      categoria={categoria.fields.category}
                     />
                     <Card
                       image={categoria.fields.image4.fields.file.url}
@@ -89,6 +99,7 @@ const Game = () => {
                       }
                       onClick={onClickHandler}
                       nameVariable={categoria.fields.name4}
+                      categoria={categoria.fields.category}
                     />
                     <Card
                       image={categoria.fields.image5.fields.file.url}
@@ -98,6 +109,7 @@ const Game = () => {
                       }
                       onClick={onClickHandler}
                       nameVariable={categoria.fields.name5}
+                      categoria={categoria.fields.category}
                     />
                   </div>
                 </React.Fragment>
@@ -123,6 +135,7 @@ const Game = () => {
                       }
                       onClick={onClickHandler}
                       nameVariable={categoria.fields.name1}
+                      categoria={categoria.fields.category}
                     />
                     <Card
                       image={categoria.fields.image2.fields.file.url}
@@ -132,6 +145,7 @@ const Game = () => {
                       }
                       onClick={onClickHandler}
                       nameVariable={categoria.fields.name2}
+                      categoria={categoria.fields.category}
                     />
                     <Card
                       image={categoria.fields.image3.fields.file.url}
@@ -141,6 +155,7 @@ const Game = () => {
                       }
                       onClick={onClickHandler}
                       nameVariable={categoria.fields.name3}
+                      categoria={categoria.fields.category}
                     />
                     <Card
                       image={categoria.fields.image4.fields.file.url}
@@ -150,6 +165,7 @@ const Game = () => {
                       }
                       onClick={onClickHandler}
                       nameVariable={categoria.fields.name4}
+                      categoria={categoria.fields.category}
                     />
                     <Card
                       image={categoria.fields.image5.fields.file.url}
@@ -159,6 +175,7 @@ const Game = () => {
                       }
                       onClick={onClickHandler}
                       nameVariable={categoria.fields.name5}
+                      categoria={categoria.fields.category}
                     />
 
                     <div className="cards_down">
@@ -170,6 +187,7 @@ const Game = () => {
                         }
                         onClick={onClickHandler}
                         nameVariable={categoria.fields.name6}
+                        categoria={categoria.fields.category}
                       />
                       <Card
                         image={categoria.fields.image7.fields.file.url}
@@ -179,6 +197,7 @@ const Game = () => {
                         }
                         onClick={onClickHandler}
                         nameVariable={categoria.fields.name7}
+                        categoria={categoria.fields.category}
                       />
                       <Card
                         image={categoria.fields.image8.fields.file.url}
@@ -188,6 +207,7 @@ const Game = () => {
                         }
                         onClick={onClickHandler}
                         nameVariable={categoria.fields.name8}
+                        categoria={categoria.fields.category}
                       />
                     </div>
                   </div>

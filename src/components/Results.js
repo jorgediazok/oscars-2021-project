@@ -7,8 +7,6 @@ import { useHistory } from 'react-router-dom';
 const Results = ({ movies }) => {
   const history = useHistory();
 
-  console.log(movies);
-
   return (
     <div className="results">
       <h1 className="results_title">
@@ -19,7 +17,7 @@ const Results = ({ movies }) => {
       </button>
       <div className="containerWinner">
         {movies.map((movie, i) => (
-          <Winner movie={movie} key={i} />
+          <Winner movie={movie.pelicula} categoria={movie.categoria} key={i} />
         ))}
       </div>
     </div>

@@ -2,12 +2,12 @@ import React from 'react';
 import OscarSvg from '../images/oscar2.svg';
 import '../styles/Winner.css';
 
-const Winner = ({ movie }) => {
+const Winner = ({ movie, categoria }) => {
   return (
     <div className="box">
       <img src={OscarSvg} alt="" className="imageWinner" />
-      <h2>{movie}</h2>
-      <p>categoría</p>
+      <h2 className="box_categoria">{categoria}</h2>
+      <p className="box_movie">{movie}</p>
     </div>
   );
 };

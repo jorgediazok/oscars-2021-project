@@ -9,8 +9,12 @@ const Results = ({ movies }) => {
   return (
     <div className='results'>
       <h1 className='results_title'>
-        Tus Elegidos{' '}
-        <img src='/images/oscar.png' alt='' className='oscar-image' />
+        Tus Elegidos
+        <img
+          src='https://i.ibb.co/mvGSpVV/oscar.png'
+          alt=''
+          className='oscar-image'
+        />
       </h1>
       <button className='results__button' onClick={() => history.go(0)}>
         Jugar Otra Vez

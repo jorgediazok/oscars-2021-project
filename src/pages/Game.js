@@ -58,7 +58,7 @@ const Game = () => {
                     >
                       {categoria.fields.category}
                       <img
-                        src='/images/oscar.png'
+                        src='https://i.ibb.co/mvGSpVV/oscar.png'
                         alt=''
                         className='oscar-image'
                       />
@@ -129,7 +129,7 @@ const Game = () => {
                     >
                       {categoria.fields.category}
                       <img
-                        src='/images/oscar.png'
+                        src='https://i.ibb.co/mvGSpVV/oscar.png'
                         alt=''
                         className='oscar-image'
                       />

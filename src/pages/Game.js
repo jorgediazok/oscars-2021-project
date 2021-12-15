@@ -46,21 +46,22 @@ const Game = () => {
       {isLoading ? (
         <Loading />
       ) : (
-        <div className="container">
+        <div className='container'>
           {data.map((categoria, i) => {
             if (categoria.fields.category !== 'Mejor Película') {
               return (
                 <React.Fragment key={i}>
-                  <div className="category-container">
+                  <div className='category-container'>
                     <h1
                       className={
                         i === currentCategoryIndex ? 'category' : 'title-hidden'
-                      }>
+                      }
+                    >
                       {categoria.fields.category}
-                      <img src={Oscar} alt="" className="oscar-image" />
+                      <img src={Oscar} alt='' className='oscar-image' />
                     </h1>
                   </div>
-                  <div className="cards">
+                  <div className='cards'>
                     <Card
                       image={categoria.fields.image.fields.file.url}
                       pelicula={categoria.fields.movie1}
@@ -117,16 +118,17 @@ const Game = () => {
             } else {
               return (
                 <React.Fragment key={i}>
-                  <div className="category-container">
+                  <div className='category-container'>
                     <h1
                       className={
                         i === currentCategoryIndex ? 'category' : 'card-hidden'
-                      }>
+                      }
+                    >
                       {categoria.fields.category}
-                      <img src={Oscar} alt="" className="oscar-image" />
+                      <img src={Oscar} alt='' className='oscar-image' />
                     </h1>
                   </div>
-                  <div className="cards">
+                  <div className='cards'>
                     <Card
                       image={categoria.fields.image.fields.file.url}
                       pelicula={categoria.fields.movie1}
@@ -178,7 +180,7 @@ const Game = () => {
                       categoria={categoria.fields.category}
                     />
 
-                    <div className="cards_down">
+                    <div className='cards_down'>
                       <Card
                         image={categoria.fields.image6.fields.file.url}
                         pelicula={categoria.fields.movie6}

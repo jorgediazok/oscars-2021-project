@@ -84,4 +84,8 @@
   .details p {
     font-size: 18px;
   }
+
+  .details {
+    transform: translateY(0%);
+  }
 }

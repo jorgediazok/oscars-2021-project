@@ -16,8 +16,8 @@ const Results = ({ movies }) => {
           className='oscar-image'
         />
       </h1>
-      <button className='results__button' onClick={() => history.go(0)}>
-        Jugar Otra Vez
+      <button className='results__button' onClick={() => history.push('/')}>
+        Volver a Inicio
       </button>
       <div className='containerWinner'>
         {movies.map((movie, i) => (

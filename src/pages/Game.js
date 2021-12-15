@@ -3,7 +3,7 @@ import Client from '../components/api';
 import Card from '../components/Card';
 import Loading from '../components/Loading';
 import Results from '../components/Results';
-import Oscar from '../images/oscar.png';
+// import Oscar from '../images/oscar.png';
 import '../styles/Game.css';
 
 const Game = () => {
@@ -58,7 +58,11 @@ const Game = () => {
                       }
                     >
                       {categoria.fields.category}
-                      <img src={Oscar} alt='' className='oscar-image' />
+                      <img
+                        src='/images/oscar.png'
+                        alt=''
+                        className='oscar-image'
+                      />
                     </h1>
                   </div>
                   <div className='cards'>
@@ -125,7 +129,11 @@ const Game = () => {
                       }
                     >
                       {categoria.fields.category}
-                      <img src={Oscar} alt='' className='oscar-image' />
+                      <img
+                        src='/images/oscar.png'
+                        alt=''
+                        className='oscar-image'
+                      />
                     </h1>
                   </div>
                   <div className='cards'>

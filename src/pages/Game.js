@@ -3,7 +3,6 @@ import Client from '../components/api';
 import Card from '../components/Card';
 import Loading from '../components/Loading';
 import Results from '../components/Results';
-// import Oscar from '../images/oscar.png';
 import '../styles/Game.css';
 
 const Game = () => {

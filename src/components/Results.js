@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Results.css';
 import Winner from '../components/Winner';
-// import Oscar from '../images/oscar.png';
 import { useHistory } from 'react-router-dom';
 
 const Results = ({ movies }) => {
